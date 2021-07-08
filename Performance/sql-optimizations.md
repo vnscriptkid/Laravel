@@ -43,3 +43,31 @@ View::composer('*', function ($view) {
     $view->with('channels', $channels);
 });
 ```
+
+# ⛲ Many ways of lazy-loading
+### :one: Using global scope 1
+```php
+class Thread extends Model
+{
+    protected $withCount = ['replies'];
+}
+```
+### :two: Using global scope 2 
+```php
+class Thread extends Model
+{
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::addGlobalScope('replyCount', function (Builder $builder) {
+            $builder->withCount('replies');
+        });
+    }
+}
+```
+### :three: Explicitly attach to every query needed
+```php
+Thread::latest()->withCount()->get();
+```
+

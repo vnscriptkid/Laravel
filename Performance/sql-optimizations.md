@@ -44,13 +44,14 @@ View::composer('*', function ($view) {
 });
 ```
 
-# ⛲ Many ways of lazy-loading
+# ⛲ Many ways of eager-loading
 ### :one: Using global scope 1
 ```php
 class Thread extends Model
 {
     protected $withCount = ['replies'];
 }
+// withoutGlobalScopes is not applied for this
 ```
 ### :two: Using global scope 2 
 ```php
@@ -65,6 +66,9 @@ class Thread extends Model
         });
     }
 }
+
+// somewhere else
+Thread::withoutGlobalScopes()->first()
 ```
 ### :three: Explicitly attach to every query needed
 ```php

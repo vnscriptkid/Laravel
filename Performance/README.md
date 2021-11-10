@@ -15,6 +15,19 @@
 <img src="https://user-images.githubusercontent.com/28957748/141107836-bcc12080-b186-4f02-9517-9dfb37a6b88b.png" height="150px"/>
 
 ## 3. lesson-03-getting-one-record-from-has-many-relationships
+- scenario: one `user` has many `logins`
+<img src="https://user-images.githubusercontent.com/28957748/141114050-97c28211-26bc-410f-8af6-b9589665fe45.png" height="200px"/>
+
+- goal: for one `user`, get the latest login
+- approaches:
+  - naive: while fetching users, eager-load logins (DB side) sort and take the latest (BE side)
+  - denormalized way: store `last_login_id` in `users` table
+  - delegate job of sort and find last login to DB using `subqueries`
+    - mechanism: for each user, find all logins of that user, find the latest, select field `created_at`
+    - notice: subquery is put in where clause, and must resolve to one value
+    - resolved value is a computed column
+
+<img src="https://user-images.githubusercontent.com/28957748/141115832-f91b3db2-fc46-4d56-9527-6f7f13320cf0.png" height="200px"/>
 
 ## 4. lesson-04-creating-dynamic-relationships-using-sub-queries
 

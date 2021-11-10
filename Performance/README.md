@@ -7,6 +7,12 @@
 - problems with eager loading: look at `Models` tabs, how many model objects has been populated
 
 ## 2. lesson-02-minimizing-memory-usage
+![image](https://user-images.githubusercontent.com/28957748/141107255-667b537b-cd85-4b19-ab4a-a1cdb77ea9be.png)
+- look at amount of data loaded, too much?
+- why? `select *`
+- solution? select what's needed
+- where? index page (huge collection of posts)
+<img src="https://user-images.githubusercontent.com/28957748/141107836-bcc12080-b186-4f02-9517-9dfb37a6b88b.png" height="150px"/>
 
 ## 3. lesson-03-getting-one-record-from-has-many-relationships
 

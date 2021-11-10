@@ -24,10 +24,12 @@
   - denormalized way: store `last_login_id` in `users` table
   - delegate job of sort and find last login to DB using `subqueries`
     - mechanism: for each user, find all logins of that user, find the latest, select field `created_at`
-    - notice: subquery is put in where clause, and must resolve to one value
+    - notice: subquery is put in where clause, and must resolve to one value (1 row, 1 col)
     - resolved value is a computed column
 
 <img src="https://user-images.githubusercontent.com/28957748/141115832-f91b3db2-fc46-4d56-9527-6f7f13320cf0.png" height="200px"/>
+
+<img src="https://user-images.githubusercontent.com/28957748/141116380-f50361ff-0781-422e-be8e-0ad9658d2eff.png" height="300px"/>
 
 ## 4. lesson-04-creating-dynamic-relationships-using-sub-queries
 

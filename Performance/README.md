@@ -32,6 +32,19 @@
 <img src="https://user-images.githubusercontent.com/28957748/141116380-f50361ff-0781-422e-be8e-0ad9658d2eff.png" height="300px"/>
 
 ## 4. lesson-04-creating-dynamic-relationships-using-sub-queries
+- context: one `user` has many `logins`
+- normal relationship:
+  - `user.logins`: returns all `logins` of `user`
+  ```sql
+  select * from logins where user_id = :userId;
+  ```
+  - `login.user`: returns `user` of a `login`
+  ```sql
+  select * from users where id = :userId;
+  ```
+- dynamic relationship:
+  - diff: instead of `user hasMany logins` through `user_id`, it'd be `user belongsTo a login` through `last_login_id`
+  - `user.lastLogin` expects `logins` table must have `last_login_id` column
 
 ## 5. lesson-05-calculating-totals-using-conditional-aggregates
 

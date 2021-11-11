@@ -86,6 +86,8 @@ group by status
 ![image](https://user-images.githubusercontent.com/28957748/141341227-85b84abe-4754-43ef-918b-c81dc4cfd93a.png)
 
 ## 11. lesson-11-using-unions-to-run-queries-independently
+- fix this query
+![image](https://user-images.githubusercontent.com/28957748/141343201-6959ea1f-63bd-406c-9dac-3b2109c53f18.png)
 
 ## 12. lesson-12-fuzzier-searching-using-regular-expressions
 

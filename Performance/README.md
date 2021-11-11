@@ -64,6 +64,7 @@ group by status
 ```
 
 ## 6. lesson-06-optimizing-circular-relationships
+- circular rel while eager-loading
 ![image](https://user-images.githubusercontent.com/28957748/141334564-bdde36a8-d80d-467e-ab98-06b736c7c023.png)
 
 - hmm, repeated stuff, don't call db, take it from memory

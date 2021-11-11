@@ -71,8 +71,11 @@ group by status
 ![image](https://user-images.githubusercontent.com/28957748/141334490-93b1ba1f-b065-4716-b4ac-c853fca06c98.png)
 
 ## 7. lesson-07-setting-up-multi-column-searching
+![image](https://user-images.githubusercontent.com/28957748/141336539-b38711d9-20c5-47cc-8312-71176c3bb9ad.png)
 
 ## 8. lesson-08-getting-like-to-use-an-index
+- `name LIKE '%abc%'` this will prevent `index` on `name` from being used in `mysql` => do `LIKE 'abc%' instead`
+- subqueries might block index as well
 
 ## 9. lesson-09-faster-options-than-where-has
 

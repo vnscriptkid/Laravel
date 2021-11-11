@@ -78,6 +78,8 @@ group by status
 - subqueries might block index as well
 
 ## 9. lesson-09-faster-options-than-where-has
+- whereIn is better than `whereHas` and `join`
+![image](https://user-images.githubusercontent.com/28957748/141340229-272b0b73-2a03-4c4b-9e45-040cc0557902.png)
 
 ## 10. lesson-10-when-it-makes-sense-to-run-additional-queries
 

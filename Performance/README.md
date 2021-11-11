@@ -82,6 +82,7 @@ group by status
 ![image](https://user-images.githubusercontent.com/28957748/141340229-272b0b73-2a03-4c4b-9e45-040cc0557902.png)
 
 ## 10. lesson-10-when-it-makes-sense-to-run-additional-queries
+- using query buidler, sometimes it can't find correct index, use `EXPLAIN` to check yourself
 ![image](https://user-images.githubusercontent.com/28957748/141341227-85b84abe-4754-43ef-918b-c81dc4cfd93a.png)
 
 ## 11. lesson-11-using-unions-to-run-queries-independently

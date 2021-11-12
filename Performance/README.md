@@ -106,6 +106,11 @@ group by status
 ![image](https://user-images.githubusercontent.com/28957748/141500980-72e9b991-5b68-4650-9d9a-f3d349a2a063.png)
 
 ## 14. lesson-14-faster-ordering-using-compound-indexes
+- do not use `limit` without `order by`
+- `order by` with multiple cols => use `compound index`
+- order of compound index matters
+
+![image](https://user-images.githubusercontent.com/28957748/141502712-daa30466-06af-4c84-bc23-5359ad951601.png)
 
 ## 15. lesson-15-ordering-by-has-one-relationships
 

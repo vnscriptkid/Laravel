@@ -113,6 +113,13 @@ group by status
 ![image](https://user-images.githubusercontent.com/28957748/141502712-daa30466-06af-4c84-bc23-5359ad951601.png)
 
 ## 15. lesson-15-ordering-by-has-one-relationships
+- one `user` has one `company`
+- one-one rel through `company_id` on `users` table
+- req: sort `user` by `company_name`
+- approaches:
+  - joins: fast
+  - subqueries: slow
+- there can be various ways of querying that get the same result.
 
 ## 16. lesson-16-ordering-by-belongs-to-relationships
 

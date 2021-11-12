@@ -117,11 +117,16 @@ group by status
 - one-one rel through `company_id` on `users` table
 - req: sort `user` by `company_name`
 - approaches:
-  - joins: fast
+  - join: fast
   - subqueries: slow
 - there can be various ways of querying that get the same result.
 
 ## 16. lesson-16-ordering-by-belongs-to-relationships
+- one `user` has many `logins`
+- sort `users` by their `last_login`
+- approaches:
+  - join: slower + overhead
+  - subquery: better
 
 ## 17. lesson-17-ordering-by-has-many-relationships
 

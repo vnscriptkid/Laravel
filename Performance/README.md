@@ -90,6 +90,11 @@ group by status
 ![image](https://user-images.githubusercontent.com/28957748/141343201-6959ea1f-63bd-406c-9dac-3b2109c53f18.png)
 
 ## 12. lesson-12-fuzzier-searching-using-regular-expressions
+- reg_exp to normalize input and field value before searching (simulate full-text search)
+![image](https://user-images.githubusercontent.com/28957748/141491919-177aca99-8e5f-4225-9ff2-35e38e91f99b.png)
+
+- virutal col (my sql)
+![image](https://user-images.githubusercontent.com/28957748/141492496-00235427-49bf-4bc0-9e0f-22c8368a0131.png)
 
 ## 13. lesson-13-running-authorization-policies-in-the-database
 

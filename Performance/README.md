@@ -157,6 +157,8 @@ group by status
 - req 2: sort `books` by `username` of last `checkout`
   - join + subqueries: join `users` and `checkouts` sort by `checkout_date`, take 1, return `username`, sort `books` by that `username`
 
+- denormalize for better perf: save `last_checkout_id` in `book` record
+
 ## 19. lesson-19-ordering-with-nulls-always-last
 
 ## 20. lesson-20-ordering-by-custom-algorithms

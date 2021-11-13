@@ -55,7 +55,7 @@
 
 - filter clause (postgres)
 
-![image](https://user-images.githubusercontent.com/28957748/141332375-5065297a-cc03-4797-aeb0-c501e3665f0a.png)
+<img src="https://user-images.githubusercontent.com/28957748/141332375-5065297a-cc03-4797-aeb0-c501e3665f0a.png" height="100px"/>
 
 ```sql
 select count(*)

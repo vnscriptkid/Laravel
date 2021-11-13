@@ -115,22 +115,36 @@ group by status
 ## 15. lesson-15-ordering-by-has-one-relationships
 - one `user` has one `company`
 - one-one rel through `company_id` on `users` table
-- req: sort `user` by `company_name`
+- req: order `users` by `company_name`
 - approaches:
   - join: fast
   - subqueries: slow
 - there can be various ways of querying that get the same result.
 
 ## 16. lesson-16-ordering-by-belongs-to-relationships
+- go for join approach
+
+## 17. lesson-17-ordering-by-has-many-relationships
 - one `user` has many `logins`
 - sort `users` by their `last_login`
 - approaches:
   - join: slower + overhead
   - subquery: better
 
-## 17. lesson-17-ordering-by-has-many-relationships
-
 ## 18. lesson-18-ordering-by-belongs-to-many-relationships
+- context: 
+  - one `user` has many `checkouts`
+  - one `book` has many `checkouts`
+- it means: user can buy many books, one book can be bought by many users
+
+![image](https://user-images.githubusercontent.com/28957748/141605838-327729be-1c6c-4b21-85c7-1f9489a39da0.png)
+
+- req 1: sort books by last date checkout
+  - join: `books` with `checkouts`, group by books.id, order by checkout_date, limit 1
+  - subqueries: for each `book`, find the latest `checkout`, sort all books by `checkout_date`
+
+- req 2: sort `books` by `username` of last `checkout`
+  - join + subqueries: join `users` and `checkouts` sort by `checkout_date`, take 1, return `username`, sort `books` by that `username`
 
 ## 19. lesson-19-ordering-with-nulls-always-last
 

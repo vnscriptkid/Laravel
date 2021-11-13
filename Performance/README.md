@@ -107,14 +107,14 @@ group by status
 ## 13. lesson-13-running-authorization-policies-in-the-database
 - customers can only be viewed by `sales_rep` or `owner`
 
-<img src="https://user-images.githubusercontent.com/28957748/141495412-b9b51c50-1849-4c19-92d9-9f130dd89f19.png" height="100px"/>
+<img src="https://user-images.githubusercontent.com/28957748/141495412-b9b51c50-1849-4c19-92d9-9f130dd89f19.png" height="200px"/>
 
 - policy can break patination. why? policy is used in view layer after data has been fetched
 - authorization should be delegated to db
 
-<img src="https://user-images.githubusercontent.com/28957748/141500927-4b9a2c32-3beb-4c2e-92d5-aadf4f489f01.png" height="100px"/>
+<img src="https://user-images.githubusercontent.com/28957748/141500927-4b9a2c32-3beb-4c2e-92d5-aadf4f489f01.png" height="200px"/>
 
-<img src="https://user-images.githubusercontent.com/28957748/141500980-72e9b991-5b68-4650-9d9a-f3d349a2a063.png" height="100px"/>
+<img src="https://user-images.githubusercontent.com/28957748/141500980-72e9b991-5b68-4650-9d9a-f3d349a2a063.png" height="200px"/>
 
 ## 14. lesson-14-faster-ordering-using-compound-indexes
 - do not use `limit` without `order by`

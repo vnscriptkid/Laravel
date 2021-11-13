@@ -73,7 +73,8 @@ group by status
 ![image](https://user-images.githubusercontent.com/28957748/141334490-93b1ba1f-b065-4716-b4ac-c853fca06c98.png)
 
 ## 7. lesson-07-setting-up-multi-column-searching
-![image](https://user-images.githubusercontent.com/28957748/141336539-b38711d9-20c5-47cc-8312-71176c3bb9ad.png)
+
+<img src="https://user-images.githubusercontent.com/28957748/141336539-b38711d9-20c5-47cc-8312-71176c3bb9ad.png" height="150px" />
 
 ## 8. lesson-08-getting-like-to-use-an-index
 - `name LIKE '%abc%'` this will prevent `index` on `name` from being used in `mysql` => do `LIKE 'abc%' instead`
@@ -82,26 +83,26 @@ group by status
 ## 9. lesson-09-faster-options-than-where-has
 - whereIn is better than `whereHas` and `join`
 
-<img src="https://user-images.githubusercontent.com/28957748/141340229-272b0b73-2a03-4c4b-9e45-040cc0557902.png" height="100px"/>
+<img src="https://user-images.githubusercontent.com/28957748/141340229-272b0b73-2a03-4c4b-9e45-040cc0557902.png" height="200px"/>
 
 ## 10. lesson-10-when-it-makes-sense-to-run-additional-queries
 - using query buidler, sometimes it can't find correct index, use `EXPLAIN` to check yourself
 
-<img src="https://user-images.githubusercontent.com/28957748/141341227-85b84abe-4754-43ef-918b-c81dc4cfd93a.png" height="100px"/>
+<img src="https://user-images.githubusercontent.com/28957748/141341227-85b84abe-4754-43ef-918b-c81dc4cfd93a.png" height="200px"/>
 
 ## 11. lesson-11-using-unions-to-run-queries-independently
 - fix this query
 
-<img src="https://user-images.githubusercontent.com/28957748/141343201-6959ea1f-63bd-406c-9dac-3b2109c53f18.png" height="100px"/>
+<img src="https://user-images.githubusercontent.com/28957748/141343201-6959ea1f-63bd-406c-9dac-3b2109c53f18.png" height="200px"/>
 
 ## 12. lesson-12-fuzzier-searching-using-regular-expressions
 - reg_exp to normalize input and field value before searching (simulate full-text search)
 
-<img src="https://user-images.githubusercontent.com/28957748/141491919-177aca99-8e5f-4225-9ff2-35e38e91f99b.png" height="100px"/>
+<img src="https://user-images.githubusercontent.com/28957748/141491919-177aca99-8e5f-4225-9ff2-35e38e91f99b.png" height="200px"/>
 
 - virutal col (my sql)
 
-<img src="https://user-images.githubusercontent.com/28957748/141492496-00235427-49bf-4bc0-9e0f-22c8368a0131.png" height="100px"/>
+<img src="https://user-images.githubusercontent.com/28957748/141492496-00235427-49bf-4bc0-9e0f-22c8368a0131.png" height="200px"/>
 
 ## 13. lesson-13-running-authorization-policies-in-the-database
 - customers can only be viewed by `sales_rep` or `owner`

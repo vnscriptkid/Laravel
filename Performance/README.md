@@ -216,6 +216,13 @@ group by status
 
 ## 24. lesson-24-full-text-searching-with-rankings
 
+![image](https://user-images.githubusercontent.com/28957748/141612826-16f3bed4-89c8-4c97-8509-d2bb577407a3.png)
+
+- 2 modes: boolean && natural-sorting
+![image](https://user-images.githubusercontent.com/28957748/141612910-047cb7ce-1389-4d4b-a3c8-ffc47510539e.png)
+
+- can't use full-text search with other `order by`s in-place
+
 ## 25. lesson-25-getting-the-distance-between-geographic-points
 
 ## 26. lesson-26-filtering-by-geographic-distance

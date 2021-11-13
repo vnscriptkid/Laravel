@@ -47,15 +47,15 @@
   - `user.lastLogin` expects `logins` table must have `last_login_id` column
 
 ## 5. lesson-05-calculating-totals-using-conditional-aggregates
-<img src="https://user-images.githubusercontent.com/28957748/141331293-65aac50a-8ae2-40b1-bb56-dcb5cd3d8a59.png" height="150px"/>
+<img src="https://user-images.githubusercontent.com/28957748/141331293-65aac50a-8ae2-40b1-bb56-dcb5cd3d8a59.png" height="100px"/>
 
-![image](https://user-images.githubusercontent.com/28957748/141331908-2efc5c19-e2d5-46f2-9a50-6e265b75a839.png)
+<img src="https://user-images.githubusercontent.com/28957748/141331908-2efc5c19-e2d5-46f2-9a50-6e265b75a839.png" height="100px"/>
 
-![image](https://user-images.githubusercontent.com/28957748/141332176-e91e0233-8c37-4498-b0ac-d3051b25a8e4.png)
+<img src="https://user-images.githubusercontent.com/28957748/141332176-e91e0233-8c37-4498-b0ac-d3051b25a8e4.png" height="100px"/>
 
 - filter clause (postgres)
-![image](https://user-images.githubusercontent.com/28957748/141332375-5065297a-cc03-4797-aeb0-c501e3665f0a.png)
 
+![image](https://user-images.githubusercontent.com/28957748/141332375-5065297a-cc03-4797-aeb0-c501e3665f0a.png)
 
 ```sql
 select count(*)
@@ -65,9 +65,11 @@ group by status
 
 ## 6. lesson-06-optimizing-circular-relationships
 - circular rel while eager-loading
+
 ![image](https://user-images.githubusercontent.com/28957748/141334564-bdde36a8-d80d-467e-ab98-06b736c7c023.png)
 
 - hmm, repeated stuff, don't call db, take it from memory
+
 ![image](https://user-images.githubusercontent.com/28957748/141334490-93b1ba1f-b065-4716-b4ac-c853fca06c98.png)
 
 ## 7. lesson-07-setting-up-multi-column-searching

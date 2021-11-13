@@ -211,6 +211,8 @@ group by status
 ## 22. lesson-22-making-n-plus-1-issues-impossible
 
 ## 23. lesson-23-ordering-data-for-humans-using-natural-sort
+- db normal behavior: `iphone 11` comes before `iphone 3`
+- fix: use user-defined function
 
 ## 24. lesson-24-full-text-searching-with-rankings
 

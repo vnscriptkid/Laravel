@@ -98,7 +98,7 @@ group by status
 ## 12. lesson-12-fuzzier-searching-using-regular-expressions
 - reg_exp to normalize input and field value before searching (simulate full-text search)
 
-<img src="https://user-images.githubusercontent.com/28957748/141491919-177aca99-8e5f-4225-9ff2-35e38e91f99b.png" height="200px"/>
+<img src="https://user-images.githubusercontent.com/28957748/141491919-177aca99-8e5f-4225-9ff2-35e38e91f99b.png" height="300px"/>
 
 - virutal col (my sql)
 

@@ -81,31 +81,46 @@ group by status
 
 ## 9. lesson-09-faster-options-than-where-has
 - whereIn is better than `whereHas` and `join`
+
 ![image](https://user-images.githubusercontent.com/28957748/141340229-272b0b73-2a03-4c4b-9e45-040cc0557902.png)
+<img src="" height="100px"/>
 
 ## 10. lesson-10-when-it-makes-sense-to-run-additional-queries
 - using query buidler, sometimes it can't find correct index, use `EXPLAIN` to check yourself
+
 ![image](https://user-images.githubusercontent.com/28957748/141341227-85b84abe-4754-43ef-918b-c81dc4cfd93a.png)
+<img src="" height="100px"/>
 
 ## 11. lesson-11-using-unions-to-run-queries-independently
 - fix this query
 ![image](https://user-images.githubusercontent.com/28957748/141343201-6959ea1f-63bd-406c-9dac-3b2109c53f18.png)
+<img src="" height="100px"/>
 
 ## 12. lesson-12-fuzzier-searching-using-regular-expressions
 - reg_exp to normalize input and field value before searching (simulate full-text search)
+
 ![image](https://user-images.githubusercontent.com/28957748/141491919-177aca99-8e5f-4225-9ff2-35e38e91f99b.png)
+<img src="" height="100px"/>
 
 - virutal col (my sql)
+
 ![image](https://user-images.githubusercontent.com/28957748/141492496-00235427-49bf-4bc0-9e0f-22c8368a0131.png)
+<img src="" height="100px"/>
 
 ## 13. lesson-13-running-authorization-policies-in-the-database
 - customers can only be viewed by `sales_rep` or `owner`
+
 ![image](https://user-images.githubusercontent.com/28957748/141495412-b9b51c50-1849-4c19-92d9-9f130dd89f19.png)
+<img src="" height="100px"/>
 
 - policy can break patination. why? policy is used in view layer after data has been fetched
 - authorization should be delegated to db
+
 ![image](https://user-images.githubusercontent.com/28957748/141500927-4b9a2c32-3beb-4c2e-92d5-aadf4f489f01.png)
+<img src="" height="100px"/>
+
 ![image](https://user-images.githubusercontent.com/28957748/141500980-72e9b991-5b68-4650-9d9a-f3d349a2a063.png)
+<img src="" height="100px"/>
 
 ## 14. lesson-14-faster-ordering-using-compound-indexes
 - do not use `limit` without `order by`

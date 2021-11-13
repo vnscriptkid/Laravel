@@ -186,6 +186,27 @@ group by status
   - approach 2: denormalization with `ranking_points` in `features` table
 
 ## 21. lesson-21-filtering-and-sorting-anniversary-dates
+- one `user` has a `birthday`
+- __req 1__: sort `users` by birthday's `month` and `date` but not `year`
+- approach:
+  - process date
+
+![image](https://user-images.githubusercontent.com/28957748/141611000-c212b24d-830b-4cde-ae95-6eb3e35e6396.png)
+
+  - compound index:
+
+![image](https://user-images.githubusercontent.com/28957748/141611098-73a575ff-458e-4d8a-af19-81b2468f210d.png)
+
+- __req 2__: filter `users` who have birthday on this week
+  - naive: use `where between`, won't work with first day of year
+  - better: use `where in`, passing 7 days of week
+
+![image](https://user-images.githubusercontent.com/28957748/141611676-9b7563e5-f1e9-48ce-8d31-bdff780f8d4a.png)
+
+- reuse from compound index: `users_birthday_name_index`, even when only birthday is used in query (birthday must come first in compound index)
+
+![image](https://user-images.githubusercontent.com/28957748/141611777-defdbab1-409e-45be-b5ab-59dfe5d3b2b8.png)
+
 
 ## 22. lesson-22-making-n-plus-1-issues-impossible
 

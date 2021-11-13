@@ -170,6 +170,20 @@ group by status
 - for sorting, we need 2 params: `$column` and `$direction`
 
 ## 20. lesson-20-ordering-by-custom-algorithms
+- context: one `feature` has `status` of either `requested` || `approved` || `completed`
+- req 1: sort `features` by `status`:
+  - naive: `order by status`
+  - better:
+
+  <img src="https://user-images.githubusercontent.com/28957748/141609856-2c07eb25-010c-4a95-abd8-3a0ace594776.png" height="200px" />
+
+  <img src="https://user-images.githubusercontent.com/28957748/141609889-4322aba1-15df-4825-b166-bf44073a34bd.png" height="200px" />
+
+- req 2: one `feature` has `comments` and `votes`. sort by `comments_count` and `votes_count`, prioritizing `votes_count`
+  - approach 1: can't index this custom ranking as depends on 2 subqueries
+  ![image](https://user-images.githubusercontent.com/28957748/141610262-36fb3214-ac5b-441c-bea0-e7a2fa26d1e9.png)
+
+  - approach 2: denormalization with `ranking_points` in `features` table
 
 ## 21. lesson-21-filtering-and-sorting-anniversary-dates
 

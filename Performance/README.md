@@ -150,7 +150,7 @@ group by status
 
 ![image](https://user-images.githubusercontent.com/28957748/141605838-327729be-1c6c-4b21-85c7-1f9489a39da0.png)
 
-- req 1: sort books by last date checkout
+- req 1: sort `books` by last date checkout
   - join: `books` with `checkouts`, group by books.id, order by checkout_date, limit 1
   - subqueries: for each `book`, find the latest `checkout`, sort all books by `checkout_date`
 

@@ -160,6 +160,14 @@ group by status
 - denormalize for better perf: save `last_checkout_id` in `book` record
 
 ## 19. lesson-19-ordering-with-nulls-always-last
+- context: one `book` borrowed by one `user`
+  - books has been checked out: `user_id` not null
+  - books which are available: `user_id` is null
+- req: sort `books` by `name` with available books putting last
+- approaches:
+  - naive: `Book::query()->orderByDesc('user_id')->orderBy('name')`
+  - better: `Book::query()->orderByRaw('user_id is null')->orderBy('name')`'
+- for sorting, we need 2 params: `$column` and `$direction`
 
 ## 20. lesson-20-ordering-by-custom-algorithms
 
